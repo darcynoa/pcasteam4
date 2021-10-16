@@ -42,7 +42,7 @@ Team Member Styles
 
 */
 .team {
-  display: block;
+  display: flex;
   align-items: center;
 }
 
