@@ -5,10 +5,17 @@
 */
 
 :root {
-  --font-primary: "Rubik", sans-serif;
+  --font-primary: "Oxanium", sans-serif;
+  --font-primary-light: 300;
+  --font-secondary: "Rubik", sans-serif;
 }
 
-html {
+::selection {
+  background: white;
+  color: black;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,12 +24,31 @@ html {
 body {
   background: repeating-linear-gradient(#101010, #111, #101010 1000px);
   color: white;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
 
 h1 {
-  font-family: var(--font-primary);
+  font-family: var(
+    --font-secondary
+  ); /* var(--font-primary);
+  font-weight: var(--font-primary-light); */
   text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+h1:first-child {
+  padding-top: 6rem;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-primary-light);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
 }
 
 a:link,
@@ -54,14 +80,30 @@ a:hover {
 
 /* 
 
-Team Member Styles 
+  Navigation Styles
 
 */
-.team {
+.logo {
+  margin-left: 8rem;
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  right: 0;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.team__member__img {
-  width: 50%;
+.nav__list {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
 }

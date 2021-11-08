@@ -1,0 +1,29 @@
+/* 
+
+  Hero Styling
+
+*/
+.hero {
+  /* height: 100vh; */
+}
+
+/* 
+
+Team Member Styles 
+
+*/
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.team__member {
+  flex: 60% 60%;
+}
+
+.team__member__img {
+  width: 20rem;
+}

@@ -1,3 +1,5 @@
+# Access through MSU NetID
+
 AuthType Basic
 AuthBasicProvider ldap
 AuthName "Roaming Access"
@@ -5,3 +7,11 @@ AuthLDAPURL ldap://ds.cse.msu.edu:389/ou=People,dc=cse,dc=msu,dc=edu?uid?sub
 AuthLDAPGroupAttribute memberUid
 AuthLDAPGroupAttributeIsDN off
 Require valid-user
+
+# Access with just a password
+
+# AuthType basic
+# AuthName "Only by invitation"
+# # AuthUserFile /Desktop/College/Fall 2021/CSE 435/CSE435-PCAS-Team4
+# AuthUserFile /user/darcynoa/web/DIR/.htpasswd
+# Require valid-user
