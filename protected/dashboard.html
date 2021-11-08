@@ -9,6 +9,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,8 +18,218 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Test</h1>
+    <div class="dashboard__container">
+      <nav class="dashboard__nav">
+        <a class="dashboard__nav__site-link" href="../index.html"
+          >&#8592; Go Back To Site</a
+        >
+        <div class="dashboard__nav__active-bar"></div>
+        <ul class="dashboard__nav__list">
+          <li class="dashboard__nav__list__item dashboard-nav-active">Home</li>
+          <li class="dashboard__nav__list__item">Meetings</li>
+          <li class="dashboard__nav__list__item">Deadlines</li>
+          <li class="dashboard__nav__list__item">Deliverables</li>
+          <li class="dashboard__nav__list__item">Forum</li>
+          <li class="dashboard__nav__list__item">Questions</li>
+          <li class="dashboard__nav__list__item">Other</li>
+        </ul>
+      </nav>
+      <main class="dashboard__main">
+        <h2>PCAS Team 4 Dashboard</h2>
+        <!-- Home -->
+        <div
+          class="dashboard__main__widgets__container home dashboard-main-active"
+        >
+          <div class="dashboard__main__widget__row">
+            <div class="dashboard__main__widget__column">
+              <div class="dashboard__main__widget home__next-meeting">
+                <h3>Next Meeting</h3>
+                <div>
+                  <ul>
+                    <li><i class="ai-calendar"></i>November 11th</li>
+                    <li><i class="ai-clock"></i>11:59pm</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dashboard__main__widget home__agenda">
+                <h3>Agenda</h3>
+                <ul>
+                  <li>Create the outline for the domain/class model</li>
+                  <li>Create the outline for the domain/class model</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dashboard__main__widget__column">
+              <div class="dashboard__main__widget home__deadlines">
+                <h3>Deadlines</h3>
+                <div class="home__deadline-row">
+                  <h4>Nov. 8th</h4>
+                  <p>Class/Domain model</p>
+                  <p>
+                    Diagrams should capture the key elements and relationships
+                    for your system.
+                  </p>
+                </div>
+                <div class="home__deadline-row">
+                  <h4>Nov. 15th</h4>
+                  <p>Prototype v1</p>
+                </div>
+                <div class="home__deadline-row">
+                  <h4>Nov. 17th</h4>
+                  <p>SRS v1</p>
+                </div>
+                <!-- Use Below Commented Code for Something Else -->
+                <!-- <div class="home-deadlines__tasks-list">
+                  <div class="home-deadlines__task">
+                    <h4>Team</h4>
+                    <ul>
+                      <li>Kill it at asking questions</li>
+                    </ul>
+                  </div>
+                  <div class="home-deadlines__task">
+                    <h4>Project Manager</h4>
+                    <ul>
+                      <li>Asking the questions</li>
+                    </ul>
+                  </div>
+                  <div class="home-deadlines__task">
+                    <h4>Project Facilitator</h4>
+                    <ul>
+                      <li>Taking notes</li>
+                    </ul>
+                  </div>
+                  <div class="home-deadlines__task">
+                    <h4>Artifacts Manager</h4>
+                    <ul>
+                      <li>Taking notes</li>
+                    </ul>
+                  </div>
+                  <div class="home-deadlines__task">
+                    <h4>Domain Expert</h4>
+                    <ul>
+                      <li>Taking notes</li>
+                    </ul>
+                  </div>
+                  <div class="home-deadlines__task">
+                    <h4>Security Manager</h4>
+                    <ul>
+                      <li>Taking notes</li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+          
+          Meetings 
+        
+        -->
+        <div class="dashboard__main__widgets__container meetings">
+          <div class="dashboard__main__widget__row">
+            <div class="dashboard__main__widget__column">
+              <div class="dashboard__main__widget meetings__next-meeting">
+                <h3>Next Meeting</h3>
+                <ul>
+                  <li><i class="ai-calendar"></i>November 11th</li>
+                  <li><i class="ai-clock"></i>11:59pm</li>
+                  <li>
+                    <i class="ai-link-chain"></i
+                    ><a href="https://discord.gg/6QdgXvGbkQ">Discord Invite</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="dashboard__main__widget__column-2">
+              <div class="dashboard__main__widget meetings__agenda">
+                <h3>Agenda</h3>
+                <ul>
+                  <li>Create the outline for the domain/class model</li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Minus at ea dolor doloremque quasi doloribus quas fugit,
+                    itaque distinctio, eius cum quae? Blanditiis vitae facilis
+                    vero optio illum earum cumque!
+                  </li>
+                  <li>Create the outline for the domain/class model</li>
+                  <li>Create the outline for the domain/class model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__main__widget__row">
+            <div class="dashboard__main__widget__column">
+              <div
+                class="
+                  dashboard__main__widget dashboard__main__widget__dark
+                  meetings__past-meetings
+                "
+              >
+                <h3>Past Meetings</h3>
+                <div class="past-meetings__widget">
+                  <div class="past-meetings__time">
+                    <ul>
+                      <li><i class="ai-calendar"></i>November 11th</li>
+                      <li><i class="ai-clock"></i>11:59pm</li>
+                    </ul>
+                  </div>
+                  <h4>One of our past meetings</h4>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ai ai-TriangleDown past-meetings__dropdown"
+                  >
+                    <path d="M12 17L6 9h12l-6 8z" />
+                  </svg>
+                </div>
+                <div class="past-meetings__agenda">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro, est distinctio officia corporis impedit corrupti
+                    necessitatibus libero incidunt. Recusandae rem ducimus autem
+                    dolorum molestias doloribus incidunt eos minus, officia
+                    voluptatem.
+                  </p>
+                </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__main__widgets__container deadlines">
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="dashboard__main__widgets__container deliverables">
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="dashboard__main__widgets__container forum">
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="dashboard__main__widgets__container questions">
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="dashboard__main__widgets__container other">
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+      </main>
+    </div>
+    <script src="../scripts/dashboard.js"></script>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
   </body>
 </html>
