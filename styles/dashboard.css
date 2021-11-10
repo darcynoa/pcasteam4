@@ -132,7 +132,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1.5rem;
+  padding: 1.5rem;
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -295,6 +295,24 @@ HOME SECTION
   width: 90%;
   height: 0;
   overflow: hidden;
+}
+
+/* 
+
+  Deadlines Styles
+
+*/
+.deadlines__row {
+  width: 90%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.deadlines__row__header {
+  margin-bottom: 1.5rem;
 }
 
 /* 
