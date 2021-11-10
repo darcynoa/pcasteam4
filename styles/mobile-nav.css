@@ -1,0 +1,48 @@
+/* 
+  Classes:
+  
+
+
+*/
+
+.mobile-nav-overlay {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #101010;
+  /* z-index: 5; */
+  /* display: none; */
+  display: grid;
+  place-items: center;
+}
+
+.mobile-nav-overlay__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-primary);
+}
+
+.mobile-nav-overlay__list hr {
+  width: 100%;
+  border: 1px solid white;
+  background: white;
+}
+
+.mobile__nav__overlay__list__item {
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.mobile__nav__overlay__list__item a {
+  padding-left: 1rem;
+  transition: letter-spacing 0.3s ease-in-out;
+}
+.mobile__nav__overlay__list__item a:hover {
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+}
