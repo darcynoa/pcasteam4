@@ -11,8 +11,8 @@
   height: 100vh;
   background: #101010;
   /* z-index: 5; */
-  /* display: none; */
-  display: grid;
+  display: none;
+  /* display: grid; */
   place-items: center;
 }
 
