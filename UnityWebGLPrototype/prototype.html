@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | CSE 435 Prototype</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/style.css " />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <link rel="stylesheet" href="../styles/mobile-nav.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Main navigation across the whole website -->
+    <nav class="nav">
+      <div class="logo">TEAM4</div>
+      <div class="menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__list__item">
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="project-description.html">Project Description</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="requirement-specs.html">Requirement Spec</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="bibliography.html">Bibliography</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="./protected/dashboard.html">Team Members Only</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 
+
+    Mobile Navigation Overlay
+
+    -->
+    <nav class="mobile-nav-overlay">
+      <ul class="mobile-nav-overlay__list">
+        <li class="mobile__nav__overlay__list__item">
+          <a href="index.html">Home</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="project-description.html">Project Description</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="requirement-specs.html">Requirement Spec</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="bibliography.html">Bibliography</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="./protected/dashboard.html">Team Members Only</a>
+        </li>
+      </ul>
+    </nav>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -55,14 +137,16 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
+        })
+          .then((unityInstance) => {
+            loadingBar.style.display = "none";
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          })
+          .catch((message) => {
+            alert(message);
+          });
       };
       document.body.appendChild(script);
     </script>
