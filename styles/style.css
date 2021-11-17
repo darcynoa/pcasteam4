@@ -37,7 +37,7 @@ h1 {
   margin: 1rem;
 }
 
-h1:first-child {
+h1:first-of-type {
   padding-top: 6rem;
 }
 
@@ -83,50 +83,25 @@ a:hover {
   Navigation Styles
 
 */
-.menu {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  width: 2.5rem;
-  cursor: pointer;
-}
-.menu__line {
-  background: #fff;
-  border-radius: 10px;
-  height: 0.15rem;
-  margin: 0.2rem 0;
-}
-
-.menu__line:nth-of-type(1) {
-  width: 100%;
-  /* width: 50%;
-  transform-origin: top;
-  transform: rotateZ(45deg) translate(0px, 0); */
-}
-.menu__line:nth-of-type(2) {
-  width: 68%;
-  /* width: 50%;
-  transform-origin: bottom;
-  transform: rotateZ(-45deg) translate(6.5px, -6.5px); */
-}
 
 .logo {
   margin-left: 6rem;
-  padding: 2rem;
+  padding-right: 2rem;
   font-family: var(--font-secondary);
   font-weight: 900;
   font-size: 1.5rem;
 }
 .nav {
+  background-color: transparent;
   position: fixed;
   width: 100%;
   padding: 1rem 2rem;
   right: 0;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 0;
+  z-index: 5;
 }
 
 .nav__list {
@@ -145,16 +120,6 @@ a:hover {
   .logo {
     margin: 0;
     padding-left: 1rem;
-  }
-
-  .menu {
-    display: flex;
-  }
-  .nav {
-    padding: 0rem 2rem;
-  }
-  .nav__list {
-    display: none;
   }
 }
 
