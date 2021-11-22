@@ -2,3 +2,13 @@
   max-width: 110ch;
   margin: 0 auto;
 }
+
+.project-description__img-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.project-description__img {
+  width: 100%;
+  margin: 1rem 0rem;
+}
