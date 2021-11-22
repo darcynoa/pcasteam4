@@ -320,6 +320,11 @@ HOME SECTION
 All Media Queries
 
 */
+@media only screen and (max-width: 952px) {
+  .dashboard__nav__active-bar {
+    top: 160px;
+  }
+}
 @media only screen and (max-width: 780px) {
   html {
     font-size: 12px;

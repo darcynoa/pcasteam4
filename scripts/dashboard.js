@@ -16,7 +16,11 @@ let navActiveBarStyle = navActiveBar.style;
  * Init
  */
 let navActiveBarTop = 135;
-
+let navActiveBarTopShift = 70;
+if (window.innerWidth <= 952) {
+  navActiveBarTop = 160;
+  navActiveBarTopShift = 63;
+}
 /**
  * Full Navigation Functionality
  *
@@ -33,7 +37,7 @@ for (let i = 0; i < navListItems.length; i++) {
     //
     //  Change Nav Active Bar and List Item Style
     //
-    let shift = navActiveBarTop + 70 * i;
+    let shift = navActiveBarTop + navActiveBarTopShift * i;
     navActiveBarStyle.top = `${shift}px`;
 
     for (const navItem of navListItems) {
