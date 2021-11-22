@@ -9,6 +9,21 @@
 
 /* 
 
+  Main Content
+
+*/
+.main {
+  width: 90%;
+  margin: auto;
+}
+
+.main p {
+  width: 90ch;
+  margin: 2rem auto;
+}
+
+/* 
+
 Team Member Styles 
 
 */
@@ -24,6 +39,26 @@ Team Member Styles
   flex: 60% 60%;
 }
 
+.team__member__img-container {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+.team__member__img-container .team__member__img {
+  transform: translateY(-50px) scale(1.2);
+}
 .team__member__img {
   width: 20rem;
+}
+
+/* 
+
+  Footer
+
+*/
+.footer {
+  padding: 2rem 5rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
 }
