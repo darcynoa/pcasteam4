@@ -18,7 +18,7 @@
 }
 
 .main p {
-  width: 90ch;
+  width: 50%;
   margin: 2rem auto;
 }
 
@@ -61,4 +61,10 @@ Team Member Styles
   display: flex;
   gap: 4rem;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .main p {
+    width: 90%;
+  }
 }
