@@ -61,8 +61,27 @@ for (let i = 0; i < navListItems.length; i++) {
   });
 }
 
-/**
- * Past Meetings Widget in the Meetings Section
- *
- * Functionality to add the agenda of the past meetings
- */
+//
+// Questions Accordion FAQ Panel
+//
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.children[1];
+    let accIconLine = this.children[2].children[0];
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      accIconLine.style.width = "100%";
+    } else {
+      panel.style.display = "block";
+      accIconLine.style.width = "0";
+    }
+  });
+}

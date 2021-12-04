@@ -266,9 +266,9 @@ HOME SECTION
 .past-meetings__widget {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 10rem;
   padding: 4rem 1rem;
 }
 
@@ -280,9 +280,10 @@ HOME SECTION
 
 .past-meetings__widget h4 {
   width: 45ch;
+  line-height: 2rem;
 }
 
-.past-meetings__dropdown {
+/* .past-meetings__dropdown {
   perspective: 15px;
   transition: transform 0.5s ease-in-out;
 }
@@ -295,7 +296,7 @@ HOME SECTION
   width: 90%;
   height: 0;
   overflow: hidden;
-}
+} */
 
 /* 
 
@@ -315,6 +316,72 @@ HOME SECTION
   margin-bottom: 1.5rem;
 }
 
+.deadlines__strike {
+  text-decoration: line-through;
+}
+
+/*
+
+  Questions Styles
+
+*/
+.questions h3 {
+  margin-bottom: 3rem;
+}
+.accordion {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #101010;
+  color: white;
+  padding: 2rem;
+  width: 80%;
+  text-align: left;
+  transition: 0.5s;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.accordion__icon {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  width: 1rem;
+}
+
+.accordion__icon span {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 0.15rem;
+}
+
+.accordion__icon span:first-of-type {
+  transform: rotateZ(90deg) translateX(2px);
+  width: 100%;
+}
+
+.accordion p {
+  margin: 0;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active,
+.accordion:hover {
+  background-color: #ccc;
+} */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  display: none;
+  overflow: hidden;
+  padding: 2rem 0rem;
+  font-weight: var(--font-primary-light);
+}
+
+.panel ul li {
+  padding: 0.25rem 0rem;
+}
 /* 
 
 All Media Queries
