@@ -10,6 +10,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/mobile-nav.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,6 +39,48 @@
           <li class="dashboard__nav__list__item">Discussion</li>
           <li class="dashboard__nav__list__item">Questions</li>
           <li class="dashboard__nav__list__item">Other</li>
+        </ul>
+      </nav>
+      <!-- Mobile Navigation -->
+      <div class="menu dashboard__menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+      </div>
+      <nav class="mobile-nav-overlay">
+        <ul class="mobile-nav-overlay__list">
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Home
+          </li>
+          <hr />
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Project Description
+          </li>
+          <hr />
+          <li class="mobile__nav__overlay__list__item">
+            <a href="requirement-specs.html">Requirement Spec</a>
+          </li>
+          <hr />
+          <li class="mobile__nav__overlay__list__item">
+            <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+          </li>
+          <hr />
+          <li class="mobile__nav__overlay__list__item">
+            <a href="bibliography.html">Bibliography</a>
+          </li>
+          <hr />
+          <li class="mobile__nav__overlay__list__item">
+            <a href="./protected/dashboard.html">Team Members Only</a>
+          </li>
         </ul>
       </nav>
       <main class="dashboard__main">
@@ -303,9 +346,19 @@
           >
           <a href="../UnityWebGLPrototype/prototype.html">Our Prototype</a> -->
         </div>
+        <!-- 
+
+          Discussion
+
+         -->
         <div class="dashboard__main__widgets__container discussion">
           <div class="coming-soon">Coming Soon</div>
         </div>
+        <!-- 
+
+          Questions and Answers
+
+         -->
         <div class="dashboard__main__widgets__container questions">
           <div class="dashboard__main__widgets__row">
             <div class="dashboard__main__widgets__column">
@@ -1258,6 +1311,11 @@
             </div>
           </div>
         </div>
+        <!-- 
+
+          Other Resources
+
+         -->
         <div class="dashboard__main__widgets__container other">
           <div class="coming-soon">No other resources here....</div>
         </div>
