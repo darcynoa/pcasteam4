@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedestrian Collision Avoidance Systems for Automated Vehicles</title>
+    <title>Project Description | Team 4's PCAS</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile-nav.css" />
     <link rel="stylesheet" href="./styles/project-description.css" />
 
     <!-- fonts -->
@@ -18,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 
@@ -25,67 +30,103 @@
       Navigation
 
      -->
-     <div class="nav-barrier"></div>
-     <nav class="nav">
-       <div class="logo">TEAM 4</div>
-       <ul class="nav__list">
-         <li class="nav__list__item">
-           <a href="index.html">Home</a>
-         </li>
- 
-         <li class="nav__list__item">
-           <a href="project-description.html">Project Description</a>
-         </li>
- 
-         <li class="nav__list__item">
-           <a href="requirement-specs.html">Requirement Spec</a>
-         </li>
- 
-         <li class="nav__list__item">
-           <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
-         </li>
- 
-         <li class="nav__list__item">
-           <a href="bibliography.html">Bibliography</a>
-         </li>
- 
-         <li class="nav__list__item">
-           <a href="./protected/dashboard.html">Team Members Only</a>
-         </li>
-       </ul>
-     </nav>
+    <div class="nav-barrier"></div>
+    <nav class="nav">
+      <div class="logo"><a href="./index.html">TEAM4</a></div>
+      <div class="menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__list__item">
+          <a href="index.html">Home</a>
+        </li>
 
-     <h1>Project Description</h1>
- 
-     <!-- <embed src="./PCAS - Project Description.pdf" width="100%" height="690px" /> -->
-     <div class="project-description__img-container">
-       <img
-         src="./images/project-description/0001.jpg"
-         alt="Project Description Page 1"
-         class="project-description__img"
-       /><img
-         src="./images/project-description/0002.jpg"
-         alt="Project Description Page 2"
-         class="project-description__img"
-       /><img
-         src="./images/project-description/0003.jpg"
-         alt="Project Description Page 3"
-         class="project-description__img"
-       /><img
-         src="./images/project-description/0004.jpg"
-         alt="Project Description Page 4"
-         class="project-description__img"
-       /><img
-         src="./images/project-description/0005.jpg"
-         alt="Project Description Page 5"
-         class="project-description__img"
-       /><img
-         src="./images/project-description/0006.jpg"
-         alt="Project Description Page 6"
-         class="project-description__img"
-       />
-     </div>
+        <li class="nav__list__item">
+          <a href="project-description.html">Project Description</a>
+        </li>
 
-</body></html>
+        <li class="nav__list__item">
+          <a href="requirement-specs.html">Requirement Spec</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="bibliography.html">Bibliography</a>
+        </li>
+
+        <li class="nav__list__item">
+          <a href="./protected/dashboard.html">Team Members Only</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 
+
+    Mobile Navigation Overlay
+
+    -->
+    <nav class="mobile-nav-overlay">
+      <ul class="mobile-nav-overlay__list">
+        <li class="mobile__nav__overlay__list__item">
+          <a href="index.html">Home</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="project-description.html">Project Description</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="requirement-specs.html">Requirement Spec</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="bibliography.html">Bibliography</a>
+        </li>
+        <hr />
+        <li class="mobile__nav__overlay__list__item">
+          <a href="./protected/dashboard.html">Team Members Only</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Project Description</h1>
+
+    <!-- <embed src="./PCAS - Project Description.pdf" width="100%" height="690px" /> -->
+    <div class="project-description__img-container">
+      <img
+        src="./images/project-description/0001.jpg"
+        alt="Project Description Page 1"
+        class="project-description__img"
+      /><img
+        src="./images/project-description/0002.jpg"
+        alt="Project Description Page 2"
+        class="project-description__img"
+      /><img
+        src="./images/project-description/0003.jpg"
+        alt="Project Description Page 3"
+        class="project-description__img"
+      /><img
+        src="./images/project-description/0004.jpg"
+        alt="Project Description Page 4"
+        class="project-description__img"
+      /><img
+        src="./images/project-description/0005.jpg"
+        alt="Project Description Page 5"
+        class="project-description__img"
+      /><img
+        src="./images/project-description/0006.jpg"
+        alt="Project Description Page 6"
+        class="project-description__img"
+      />
+    </div>
+    <script src="./scripts/mobile-nav.js"></script>
   </body>
 </html>
