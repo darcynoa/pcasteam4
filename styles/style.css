@@ -114,7 +114,7 @@ a:hover {
 }
 
 .logo a:hover {
-  text-decoration: none;
+  color: white;
 }
 
 .nav__list {
