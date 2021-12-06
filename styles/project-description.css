@@ -12,3 +12,19 @@
   width: 100%;
   margin: 1rem 0rem;
 }
+
+@media only screen and (max-width: 780px) {
+  .project-description__img-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .project-description__img-container {
+    width: 98%;
+  }
+
+  .project-description__img {
+    margin: 0;
+  }
+}
