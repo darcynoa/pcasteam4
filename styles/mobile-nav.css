@@ -3,7 +3,8 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
+  text-align: right;
   width: 2.5rem;
   cursor: pointer;
   z-index: 3;
