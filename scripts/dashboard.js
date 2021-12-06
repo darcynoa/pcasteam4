@@ -62,8 +62,64 @@ for (let i = 0; i < navListItems.length; i++) {
 }
 
 //
-// Questions Accordion FAQ Panel
+// Mobile nav functionality
 //
+
+// Elements //
+const overlay = document.querySelector(".mobile-nav-overlay");
+const btnMenu = document.querySelector(".dashboard__menu");
+const btnMenuLines = document.querySelectorAll(".dashboard__menu__line");
+const mobileNavListItems = document.querySelectorAll(
+  ".dashboard__nav__list__item__mobile"
+);
+const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
+
+// Classes //
+const menuLinesClose = "menu__line__close";
+// Functionality //
+btnMenu.addEventListener("click", () => {
+  btnMenuLines.forEach((menuLine) => {
+    menuLine.classList.toggle(menuLinesClose);
+  });
+  if (btnMenuLines[0].classList.contains(menuLinesClose)) {
+    overlay.style.display = "grid";
+    document.body.style.overflow = "hidden";
+  } else {
+    overlay.style.display = "none";
+    document.body.style.overflow = "initial";
+  }
+});
+
+mobileNavListItems.forEach((mobileNavListItem) => {
+  mobileNavListItem.addEventListener("click", () => {
+    console.log(mobileNavListItem.innerHTML.toLowerCase().trim());
+    btnMenuLines.forEach((menuLine) => {
+      menuLine.classList.toggle(menuLinesClose);
+    });
+    //
+    //  Change main dashboard view
+    //
+    for (const mainWidgetContainer of mainWidgetContainers) {
+      mainWidgetContainer.classList.remove(mainActive);
+      if (
+        mainWidgetContainer.classList[1] ===
+        mobileNavListItem.innerHTML.toLowerCase().trim()
+      ) {
+        mainWidgetContainer.classList.add(mainActive);
+      }
+    }
+
+    mobileNavOverlay.style.display = "none";
+  });
+});
+
+/**
+ * Question and Answers Functionality
+ *
+ * Accordion menu that will expand and narrow when clicking on the icon
+ *
+ * Also animates the icon from a + to a -
+ */
 var acc = document.getElementsByClassName("accordion");
 var i;
 

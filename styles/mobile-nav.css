@@ -1,4 +1,5 @@
-.menu {
+.menu,
+.dashboard__menu {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +8,16 @@
   cursor: pointer;
   z-index: 3;
 }
-.menu__line {
+
+.dashboard__menu {
+  align-items: flex-start;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 5;
+}
+.menu__line,
+.dashboard__menu__line {
   background: #fff;
   border-radius: 1rem;
   height: 0.15rem;
@@ -15,21 +25,29 @@
   transition: all 0.3s ease-in-out;
 }
 
-.menu__line:nth-of-type(1) {
+.dashboard__menu__line {
+  height: 0.2rem;
+}
+
+.menu__line:nth-of-type(1),
+.dashboard__menu__line:nth-of-type(1) {
   width: 100%;
 }
 
-.menu__line:nth-of-type(1).menu__line__close {
+.menu__line:nth-of-type(1).menu__line__close,
+.dashboard__menu__line:nth-of-type(1).menu__line__close {
   width: 50%;
   transform-origin: top;
   transform: rotateZ(45deg) translate(0px, 0);
 }
 
-.menu__line:nth-of-type(2) {
+.menu__line:nth-of-type(2),
+.dashboard__menu__line:nth-of-type(2) {
   width: 68%;
 }
 
-.menu__line:nth-of-type(2).menu__line__close {
+.menu__line:nth-of-type(2).menu__line__close,
+.dashboard__menu__line:nth-of-type(2).menu__line__close {
   width: 50%;
   transform-origin: bottom;
   transform: rotateZ(-45deg) translate(6px, -6px);

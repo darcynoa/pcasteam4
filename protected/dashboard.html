@@ -9,8 +9,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/dashboard.css" />
     <link rel="stylesheet" href="../styles/mobile-nav.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,12 +42,21 @@
         </ul>
       </nav>
       <!-- Mobile Navigation -->
-      <div class="menu dashboard__menu">
-        <span class="menu__line"></span>
-        <span class="menu__line"></span>
+      <div class="dashboard__menu">
+        <span class="dashboard__menu__line"></span>
+        <span class="dashboard__menu__line"></span>
       </div>
       <nav class="mobile-nav-overlay">
         <ul class="mobile-nav-overlay__list">
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            <a href="../index.html">&#8592; Go Back To Site</a>
+          </li>
+          <hr />
           <li
             class="
               mobile__nav__overlay__list__item
@@ -63,23 +72,52 @@
               dashboard__nav__list__item__mobile
             "
           >
-            Project Description
+            Meetings
           </li>
           <hr />
-          <li class="mobile__nav__overlay__list__item">
-            <a href="requirement-specs.html">Requirement Spec</a>
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Deadlines
           </li>
           <hr />
-          <li class="mobile__nav__overlay__list__item">
-            <a href="./UnityWebGLPrototype/prototype.html">Our Prototype</a>
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Deliverables
           </li>
           <hr />
-          <li class="mobile__nav__overlay__list__item">
-            <a href="bibliography.html">Bibliography</a>
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Discussion
           </li>
           <hr />
-          <li class="mobile__nav__overlay__list__item">
-            <a href="./protected/dashboard.html">Team Members Only</a>
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Questions
+          </li>
+          <hr />
+          <li
+            class="
+              mobile__nav__overlay__list__item
+              dashboard__nav__list__item__mobile
+            "
+          >
+            Other
           </li>
         </ul>
       </nav>
@@ -99,7 +137,7 @@
                 <h3>Next Meeting</h3>
                 <div>
                   <ul>
-                    <li><i class="ai-calendar"></i>November 30th</li>
+                    <li><i class="ai-calendar"></i>December 7th</li>
                     <li><i class="ai-clock"></i>5:00pm</li>
                   </ul>
                 </div>
@@ -107,8 +145,8 @@
               <div class="dashboard__main__widget home__agenda">
                 <h3>Agenda</h3>
                 <ul>
-                  <li>Going over the revisions for SRS v2</li>
-                  <li>Review SRS before the final submission</li>
+                  <li>Review everyone's slides</li>
+                  <li>Practice presenting</li>
                 </ul>
               </div>
             </div>
@@ -138,7 +176,7 @@
               <div class="dashboard__main__widget meetings__next-meeting">
                 <h3>Next Meeting</h3>
                 <ul>
-                  <li><i class="ai-calendar"></i>November 30th</li>
+                  <li><i class="ai-calendar"></i>December 7th</li>
                   <li><i class="ai-clock"></i>5:00pm</li>
                   <li>
                     <i class="ai-link-chain"></i
@@ -152,8 +190,8 @@
               <div class="dashboard__main__widget meetings__agenda">
                 <h3>Agenda</h3>
                 <ul>
-                  <li>Looking over SRS revisions</li>
-                  <li>SRS review before submission</li>
+                  <li>Review everyone's slides</li>
+                  <li>Practice presenting</li>
                 </ul>
               </div>
             </div>
@@ -368,7 +406,7 @@
                   questions
                 "
               >
-                <h3>Q&A with Chris Capaldi</h3>
+                <h3 id="qanda">Q&A with Chris Capaldi</h3>
 
                 <div class="accordion">
                   <p>
@@ -1304,9 +1342,29 @@
                     <span></span>
                   </div>
                 </div>
-
-                <h3>More notes from Chris Capaldi</h3>
-                ul>li
+                <h3 id="notes">More notes from Chris Capaldi</h3>
+                <p>
+                  All other aspects besides avoiding collisions with a
+                  pedestrian, and being efficient on lost time are up to us to
+                  define.
+                </p>
+                <p>
+                  This system will be developed just for traditional cars, with
+                  no need for consideration of motorcycles.
+                </p>
+                <p>
+                  The system is independent of other systems, and the other
+                  systems are cooperative with the PCAS.
+                </p>
+                <p>
+                  Consider in specific scenarios we may not even need the PCAS
+                </p>
+                <p>
+                  There are a lot of tangents we can consider that are outside
+                  of the scope such as breaking too close to another vehicle, we
+                  may want to consider these aspects and put them within the
+                  write-up.
+                </p>
               </div>
             </div>
           </div>

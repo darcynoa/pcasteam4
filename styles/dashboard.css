@@ -63,6 +63,13 @@ hr {
   margin: 1rem;
 }
 
+.dashboard__nav__list__item__mobile {
+  cursor: pointer;
+}
+.dashboard__nav__list__item__mobile:hover {
+  color: var(--color-accent);
+}
+
 .dashboard-nav-active {
   color: white;
 }
@@ -399,11 +406,18 @@ All Media Queries
   .dashboard__nav {
     display: none;
   }
+  .dashboard__menu {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .dashboard__container {
     overflow-y: unset;
+  }
+
+  .dashboard__menu {
+    width: 2rem;
   }
   .dashboard__main__widgets__container {
     flex-direction: column;
