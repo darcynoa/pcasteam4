@@ -35,17 +35,16 @@ Team Member Styles
   gap: 6rem;
 }
 
-.team__member {
-  flex: 60% 60%;
-}
-
 .team__member__img-container {
   width: 20rem;
   height: 20rem;
   overflow: hidden;
 }
-.team__member__img-container .team__member__img {
+.team__member__img-container .moore {
   transform: translateY(-50px) scale(1.2);
+}
+.team__member__img-container .fahim {
+  transform: translateY(-100px) scale(1.2);
 }
 .team__member__img {
   width: 20rem;
