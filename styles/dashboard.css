@@ -56,6 +56,7 @@ hr {
   text-align: center;
   font-size: 1.5rem;
   z-index: 2;
+  position: relative;
 }
 
 .dashboard__nav__list__item {

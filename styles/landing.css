@@ -4,24 +4,92 @@
 
 */
 .hero {
-  /* height: 100vh; */
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 34.9%,
+      #000000 100%
+    ),
+    url(../images/hero.jpg);
+  background-position: 15% 50%;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 10rem;
+  transition: all 0.5s ease-in;
+}
+
+.hero h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 4.8rem;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  letter-spacing: 0.1rem;
+}
+
+.scrolldown-wrapper {
+  left: 50%;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.scrolldown {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  height: 2.25rem;
+  margin: 0 auto 8px;
+  text-align: center;
+  width: 1.2rem;
+  transition: opacity 0.5s linear;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+  animation-duration: 2s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #ffffff;
+}
+
+.scrolldown-p2 {
+  animation-delay: 1s;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
 }
 
 /* 
 
-  Main Content
+  Project Description and Background
 
 */
-.main {
-  width: 90%;
-  margin: auto;
+.project {
+  font-size: 3.5rem;
+  font-family: var(--font-primary);
+  font-weight: var(--font-primary-light);
+  margin-bottom: 10rem;
 }
 
-.main p {
-  width: 50%;
-  margin: 2rem auto;
+.project-main {
+  width: 75%;
+  margin: 5rem auto;
 }
-
 /* 
 
 Team Member Styles 
@@ -32,22 +100,47 @@ Team Member Styles
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 8rem;
+  margin-bottom: 10rem;
+}
+
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team__member h3 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-primary-light);
+  font-size: 1.75rem;
+}
+
+.team__member p {
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 .team__member__img-container {
   width: 20rem;
-  height: 20rem;
+  height: 23rem;
   overflow: hidden;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
 }
 .team__member__img-container .moore {
-  transform: translateY(-50px) scale(1.2);
+  transform: translateY(-50px);
 }
 .team__member__img-container .fahim {
-  transform: translateY(-100px) scale(1.2);
+  transform: translateY(-100px);
 }
 .team__member__img {
-  width: 20rem;
+  width: 100%;
+  margin: auto;
+  transform: translateY(35px) scale(1.2);
 }
 
 /* 
@@ -56,14 +149,109 @@ Team Member Styles
 
 */
 .footer {
-  padding: 2rem 5rem;
+  overflow: hidden;
+  padding: 2rem 0rem;
   display: flex;
+  flex-direction: column;
   gap: 4rem;
   justify-content: space-between;
+}
+.footer__header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+.footer__header {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 15rem;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  animation: marquee 20s linear infinite;
+}
+
+.footer__main {
+  padding: 2rem 8rem;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  font-weight: var(--font-primary-light);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__main p:last-child {
+  margin-left: 2rem;
+}
+
+.scroll-to-top {
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  animation: all 3s ease-in-out;
+  align-self: flex-start;
+  transition: all 0.3s ease-in;
+}
+
+.scroll-to-top:hover {
+  background: white;
+  color: black;
+}
+
+.scroll-to-top a:hover {
+  color: #000000;
+}
+
+.scroll-to-top a i {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  100% {
+    transform: translateX(-270.45rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-size: 200%;
+  }
+
+  .footer__header {
+    font-size: 12rem;
+    margin: 0rem 8rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .main p {
     width: 90%;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__main p {
+    margin: 0;
+  }
+
+  .footer__main p:last-of-type {
+    margin: 0;
+  }
+
+  .scroll-to-top {
+    order: 1;
+    align-self: center;
   }
 }

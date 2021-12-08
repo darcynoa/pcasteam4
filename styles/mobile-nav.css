@@ -39,7 +39,7 @@
 .dashboard__menu__line:nth-of-type(1).menu__line__close {
   width: 50%;
   transform-origin: top;
-  transform: rotateZ(45deg) translate(0px, 0);
+  transform: rotateZ(45deg);
 }
 
 .menu__line:nth-of-type(2),
@@ -108,5 +108,12 @@
   }
   .nav__list {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .menu__line:nth-of-type(1).menu__line__close,
+  .dashboard__menu__line:nth-of-type(1).menu__line__close {
+    transform: rotateZ(45deg) translateX(-1px) translateY(-0.5px);
   }
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/mobile-nav.css" />
 
     <!-- fonts -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +23,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -99,29 +100,38 @@
       Start of the Landing Page
 
      -->
-    <section class="hero">
-      <h1 class="hero-text">Pedestrian Collision Avoidance System</h1>
+    <section class="hero" id="hero">
+      <h1 class="hero-text">
+        Pedestrian Collision <br />
+        Avoidance System
+      </h1>
+      <div class="scrolldown-wrapper">
+        <div class="scrolldown">
+          <svg height="30" width="10">
+            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+          </svg>
+        </div>
+      </div>
     </section>
 
-    <section class="main">
+    <section class="project">
       <!-- Project Background and Description -->
-      <h2>Project Background and Description</h2>
-      <p>
-        The world of technology is in a state that is researching and testing
-        more and more autonomous devices that make day to day tasks that much
-        more convenient. Devices like a Pedestrian Collision Avoidance System on
-        a vehicle will take us to further depths of autonomous driving.
-      </p>
-      <p>
+      <div class="project-main">
+        The world of technology is in an era that is researching and testing
+        more and more autonomous devices that make day to day tasks more
+        convenient. Devices like our Pedestrian Collision Avoidance System on a
+        vehicle will take us to further depths of autonomous driving.
+      </div>
+      <div class="project-main">
         The Pedestrian Collision Avoidance System (PCAS) is an embedded system
         that scans its environemnt through different sensors and radars that
         help with sensing obstacles through heavy weather and dark nights. The
         PCAS should be able to detect an imminent collision, slow down
         gradually, or use other means to avoid the collision, and start to speed
         up once the obstacle has moved out of range.
-      </p>
+      </div>
     </section>
-    <h2>The Team Members</h2>
     <section class="team">
       <!-- Team Members -->
 
@@ -148,38 +158,65 @@
         <p>Project Facilitator</p>
       </div>
       <div class="team__member">
-        <img
-          src="./images/noah-darcy.jpg"
-          alt="The Artifacts Manager Noah D'Arcy"
-          class="team__member__img"
-        />
+        <div class="team__member__img-container">
+          <img
+            src="./images/noah-darcy.jpg"
+            alt="The Artifacts Manager Noah D'Arcy"
+            class="team__member__img"
+          />
+        </div>
         <h3>Noah D'Arcy</h3>
         <p>Artifacts Manager</p>
       </div>
       <div class="team__member">
-        <img
-          src="./images/mike-kilmurray.jfif"
-          alt="The Domain Expert and Custmer Liaison Mike Kilmurray"
-          class="team__member__img"
-        />
+        <div class="team__member__img-container">
+          <img
+            src="./images/mike-kilmurray.jfif"
+            alt="The Domain Expert and Custmer Liaison Mike Kilmurray"
+            class="team__member__img"
+          />
+        </div>
         <h3>Mike Kilmurray</h3>
         <p>Domain Expert, Customer Liaison</p>
       </div>
       <div class="team__member">
-        <img
-          src="./images/jack-baldwin.jpg"
-          alt="The Security Manager Jack Baldwin"
-          class="team__member__img"
-        />
+        <div class="team__member__img-container">
+          <img
+            src="./images/jack-baldwin.jpg"
+            alt="The Security Manager Jack Baldwin"
+            class="team__member__img"
+          />
+        </div>
         <h3>Jackson Baldwin</h3>
         <p>Security Manager</p>
       </div>
     </section>
-    <!-- Links to instructor and cse435 course page (as part of the footer??) -->
+    <!-- 
+
+      Footer
+J
+     -->
     <footer class="footer">
-      <p>Professor: Dr. Betty H.C. Cheng</p>
-      <a href="http://www.cse.msu.edu/~cse435/">Course Website</a>
+      <div class="footer__header-container">
+        <h1 class="footer__header">striving for a better future</h1>
+        <h1 class="footer__header">striving for a better future</h1>
+      </div>
+      <div class="footer__main">
+        <p>
+          Dr. Betty Cheng is a professor of Computer Science and Engineering at
+          Michigan State University teaching CSE435: Software Engineering
+        </p>
+        <div class="scroll-to-top">
+          <a href="#hero"><i class="ai-arrow-up"></i></a>
+        </div>
+        <p>
+          This project was built with her guidance and the final project of this
+          course. View the course website for more information on this project
+          as well as the course.
+        </p>
+      </div>
     </footer>
+    <script src="./scripts/script.js"></script>
     <script src="./scripts/mobile-nav.js"></script>
   </body>
 </html>
