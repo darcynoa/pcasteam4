@@ -170,7 +170,8 @@ Team Member Styles
   color: black;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
+  transition: transform 0.1s ease-in-out;
 }
 
 .footer__main {
@@ -192,7 +193,6 @@ Team Member Styles
   border-radius: 50%;
   border: 2px solid white;
   cursor: pointer;
-  animation: all 3s ease-in-out;
   align-self: flex-start;
   transition: all 0.3s ease-in;
 }
@@ -230,11 +230,47 @@ Team Member Styles
     font-size: 12rem;
     margin: 0rem 8rem;
   }
+
+  .footer__main {
+    gap: 3rem;
+  }
+
+  .footer__main p:last-of-type {
+    margin: 0 0 2rem 0;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    100% {
+      transform: translateX(-218rem);
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .main p {
     width: 90%;
+  }
+
+  .hero h1 {
+    top: 17%;
+    font-size: 4rem;
+  }
+
+  .project {
+    font-size: 2.5rem;
+  }
+
+  .project-main {
+    text-align: center;
+    width: 80%;
+  }
+
+  .footer__header {
+    margin: 0rem 10rem;
   }
 
   .footer__main {
@@ -253,5 +289,15 @@ Team Member Styles
   .scroll-to-top {
     order: 1;
     align-self: center;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    100% {
+      transform: translateX(-223.4rem);
+    }
   }
 }
