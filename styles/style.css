@@ -4,6 +4,10 @@
 
 */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --font-primary: "Oxanium", sans-serif;
   --font-primary-light: 200;
