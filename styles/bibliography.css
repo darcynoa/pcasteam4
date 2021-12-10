@@ -1,0 +1,21 @@
+.biblio__container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.biblio__container ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  counter-reset: biblio-counter;
+  padding-left: 1rem;
+}
+
+.biblio__container ol li {
+  line-height: 1.5rem;
+  counter-increment: biblio-counter;
+}
+
+.biblio__container ol li::marker {
+  content: "[" counter(biblio-counter) "]   ";
+}
