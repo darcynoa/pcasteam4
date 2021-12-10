@@ -260,6 +260,10 @@ Team Member Styles
     font-size: 4rem;
   }
 
+  .scrolldown-wrapper {
+    bottom: 15%;
+  }
+
   .project {
     font-size: 2.5rem;
   }
