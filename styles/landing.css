@@ -130,17 +130,21 @@ Team Member Styles
   overflow: hidden;
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
   border-radius: 2rem;
-}
-.team__member__img-container .moore {
-  transform: translateY(-50px);
-}
-.team__member__img-container .fahim {
-  transform: translateY(-100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team__member__img {
   width: 100%;
   margin: auto;
-  transform: translateY(35px) scale(1.2);
+  transform: scale(1.2);
+  /* transform: translateY(35px) scale(1.2); */
+}
+.team__member__img-container .moore {
+  transform: translateY(-3rem);
+}
+.team__member__img-container .fahim {
+  transform: translateY(-6rem);
 }
 
 /* 
