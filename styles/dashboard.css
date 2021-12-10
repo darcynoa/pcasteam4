@@ -328,6 +328,23 @@ HOME SECTION
   text-decoration: line-through;
 }
 
+/* 
+
+  Discussions Styles
+
+*/
+.discussion__widget img {
+  width: 100%;
+}
+.discussion__widget img:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.discussion__widget img:last-of-type {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 /*
 
   Questions Styles
@@ -422,6 +439,7 @@ All Media Queries
   }
   .dashboard__main__widgets__container {
     flex-direction: column;
+    padding-bottom: 15vh;
   }
   .dashboard__main__widget__row {
     flex-direction: column;
